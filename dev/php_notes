@@ -1,3 +1,0 @@
-foreach(array as $key => $value)
-
-sizeof($array)
