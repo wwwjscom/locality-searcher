@@ -21,12 +21,14 @@ function currSelection()
 }
 
 function openConn() {
-	$username="ushmm";
-	$password="ushmm"; 
-	$database="ushmm";
+	#$username="ushmm";
+	#$password="ushmm"; 
+	$username="root";
+	$password="root"; 
+	$database="locality";
 
 	mysql_connect(localhost,$username,$password);
-	@mysql_select_db($database) or die("Error");
+	@mysql_select_db($database) or die("Database Error");
 }
 
 
@@ -264,6 +266,7 @@ function displaySearcher()
 	<OPTION value="5">Way Off
 	<OPTION value="6">Nowhere Near Correct
 	</SELECT> -->
+	<input type="hidden" name="et" id="et" value="3" />
 	<br><br>
 	<input type="submit" value="Search">
 	</form>

@@ -21,9 +21,9 @@ function currSelection()
 }
 
 function openConn() {
-	$username="ushmm";
-	$password="ushmm"; 
-	$database="ushmm";
+	$username="root";
+	$password="root"; 
+	$database="locality";
 
 	mysql_connect(localhost,$username,$password);
 	@mysql_select_db($database) or die("Error");
