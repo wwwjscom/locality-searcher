@@ -21,14 +21,26 @@ function currSelection()
 }
 
 function openConn() {
-	#$username="ushmm";
-	#$password="ushmm"; 
-	$username="root";
-	$password="root"; 
-	$database="locality";
 
-	mysql_connect(localhost,$username,$password);
-	@mysql_select_db($database) or die("Database Error");
+	$SERVER_NAME = $_SERVER['SERVER_NAME'];
+
+	switch ($SERVER_NAME) {
+
+		case 'locality':
+			$user = "root";
+			$pass = "root";
+			$db = "locality";
+			break;
+		case 'ir.iit.edu':
+		default:
+			$user = "ushmm";
+			$pass = "ushmm";
+			$db = "ushmm";
+			break;
+	}
+
+	mysql_connect(localhost,$user,$pass);
+	@mysql_select_db($db) or die("Database Error");
 }
 
 
