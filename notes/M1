@@ -1,0 +1,13 @@
+User searchs for an incorrect term
+Term is passed to function to test for results
+if no restuls, the suggestion function is called
+The suggestion function returns suggested listings
+
+***Method 1***
+Get query length
+if query length >= 5 exec function, else dont
+	cut off letters on each side.
+	is results != 0 && threshold < x; return, else do again
+
+
+The user can pick from one of the selected listings

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Autosuggest Example 3b</title>
+        <script type="text/javascript" src="autosuggest2.js"></script>
+        <script type="text/javascript" src="remotesuggestions.js"></script>
+        <link rel="stylesheet" type="text/css" href="autosuggest.css" />        
+        <script type="text/javascript">
+            window.onload = function () {
+                var oTextbox = new AutoSuggestControl(document.getElementById("txt1"), new RemoteStateSuggestions());        
+            }
+        </script>
+    </head>
+    <body>
+        <p>This final example also combines the &quot;type ahead&quot; functionality
+        with the autosuggest functionality, but adds to it the ability to load the
+        suggestions from the server. This example cannot be run locally because it
+        relies on a PHP page to retrieve the suggestions.</p>
+        <p>As with the previous  examples, type a state name into the textbox below. 
+        Make sure the state name begins with a capital letter. The best example is still
+        &quot;Missouri&quot;.</p>
+        <p>Try it for yourself:</p>
+        <p><input type="text" id="txt1" /></p>
+    </body>
+</html>

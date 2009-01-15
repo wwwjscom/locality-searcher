@@ -1,0 +1,56 @@
+body {
+        margin: 10px 10px 0px 10px;
+        font-family: Verdana, Helvetica, Arial, sans-serif;
+        font-size: 10pt;
+        color: #010101;
+	background-color: #010101;
+}
+a {
+        color: #000000;
+}
+
+a.footer {
+	text-decoration: none;
+}
+a.footer:hover {
+	color: blue;
+}
+
+/* divisions */
+
+div.main {
+	border: 1px solid #ffffff;
+	background-color: #9a9a9a;
+        max-height: 100%;
+}
+div.masthead {}
+div.footer {
+        font-weight: bold;
+        text-align: center;
+				text-decoration:none;
+        font-size: 10pt;
+}
+
+div.searcher {
+
+        font-size: 10pt;
+}
+
+td.query_content, div.query_content {
+        text-align: center;
+        background-color: #bebebe;
+        font-size: 10pt;
+
+}
+
+td.selection {
+				text-align: left;
+        font-size: 10pt;
+}
+
+div.IRLogo {
+				text-align: right;
+				float: right;
+				padding-right: 10px;
+				padding-top: 5px;
+}
